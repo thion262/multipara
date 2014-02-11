@@ -1,0 +1,32 @@
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+void print(std::list<int> one){
+
+	std::cout << "mylist contains: ";
+	for(std::list<int>::iterator it=one.begin(); it!=one.end(); ++it){
+		std:cout << ' ' << *it;
+	}	
+	std::cout << "\n";
+
+}
+
+int main(int argc, char** argv){
+	
+	std::list<int> one;
+	
+	one.push_back(1);
+	int x = 2;
+	one.push_back(2);
+	float y = 13.54f ;
+	one.insert(one.begin(),y);
+	
+	
+	one.insert(one.begin(),{4,5,6,7});
+
+	print(one);
+}
+
+

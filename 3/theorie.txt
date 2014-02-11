@@ -1,0 +1,26 @@
+3-1:
+a) 
+Eine virtuelle Methode ist eine Methode, bei der erst zur Laufzeit bekannt wird welche Version benoetigt wird (Overloading!).
+
+b) 
+Operationen und Funktionen die Teile einer class deklariert sind. Hierbei wird die Sichtbarkeit(scope) auf alle member einer class ausgeweitet. static member functions gehoeren nicht zu einem bestimmten object, und daher koennen sie auch nicht auf objektspezifische Variablen zugreifen.
+"static prevents reinitialization of a variable"
+
+
+c) 
+Ein Destructor wird verwendet, um Speicher zu dealloziieren, d.h. freizumachen. Im Falle eines objects werden alle member-funktionen und variablen geloescht.
+
+Weil Java eine Garbage-Collection Sprache ist, dh. automatisches memory management besitzt und kein Constructor/Destructor-Pattern verwendet.
+
+d)
+direct derivation > derive from class, can see protected from base-class, access modifier to set priv / prot / public access rights for base class methods, can only restrict, not increase access rights of base class functions and variables.
+friend > declare method with that in public segment of class > able to access private variables & functions while not being a member method.
+
+e)
+Describing the proper declaring of variables or objects with const depending on their usage and safety.
+
+f)
+Ausnahmen sind  " . (dot)  ::  ?:  sizeof ".
+? wurde aus logischen gruenden nicht ueberladen.
+Auf sizeof  verlassen sich zu viele Funktionen.
+. / :: keine benefits, sondern nur verwirrung.

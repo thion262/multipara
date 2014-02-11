@@ -1,0 +1,22 @@
+2-1:
+a) Die Deklaration sagt dem Compiler dass das Objekt (Variable, Funktion) existiert und beschreibt diesen, um es dem Compiler moeglich zu mcahen, dieses zu referenzieren.
+	In der Definition wird das Objekt schlussendlich instanziert/implementiert. Dies ist noetig, damit der Linker Referenzen zu den Objekten anlegen kann.
+
+b) Zur sicheren referenz von methoden ueber mehrere quelldateien und vermeidung von multipler funktionsdefinition.
+
+c) Zum forcieren einer Inline expansion. Dies dient der Verbesserung der Laufzeit und Access Time auf kosten der Programmgroesse. Ein weiterer Vorteil ist die statische Typpruefung.
+
+d) Eine Initialisierungsliste ist eine Moeglichkeit, Parameter im Konstruktor zu initialisieren, die ohne explizite zuweisung auskommt. Ausserdem kann man damit structs im konstruktor verwenden.
+
+e) Funktionsueberladung ist die mehrfache Dekaration einer Funktion mit jeweils verschiedenen Typen und/oder Anzahl an Argumenten. Je nachdem mit welchen Argumenten diese aufgerufen wird, wird je die passende Funktion ausgewaehlt.
+
+
+2-2:
+b)* -c in gcc kompiliert nur. eine solche Binaerdatei ist noch nicht mit Libraries verlinkt, dies geschieht beim Linken.
+	* beide so kompilierte dateien in den Compiler werfen, um linking zu ermoeglichen.
+
+c)* vermeidet es variablen in den globalen namespace zu setzen
+	* man muss nun zum adressieren der Variablen ausserhalb des namespaces einen prefix verwenden.
+	* ermoeglicht es teile der standard-lib zu ueberlagern
+	* es gibt keine access specifier wie private oder public
+	
