@@ -2,6 +2,11 @@
 #include <initializer_list>
 
 namespace lmp{
+
+class Node;
+
+void Node(int content){};
+
 extern struct node* root;
 extern bool push_back(node* elem, int & content);
 

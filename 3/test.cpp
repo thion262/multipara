@@ -3,8 +3,8 @@
 using namespace lmp;
 
 int main(int argc, char** argv){
-	
-	set_root(1);
+	int root=1;
+	Node node1(root);
 	int x = 2;
 	push_back(root,x);
 	print();

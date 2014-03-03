@@ -6,7 +6,7 @@ using namespace std;
 
 namespace lmp{
 
-public class Node{
+class Node{
 
 struct node{
 	node* prev = nullptr;
@@ -17,8 +17,11 @@ struct node{
 };
 
 struct node* root;
-node* first_element(node* elem);
-node* last_element(node* elem);
+
+
+void Node (int content){
+	root = new node (nullptr,nullptr,content);
+}
 
 
 // add new node with content &data 
@@ -122,11 +125,7 @@ void print(){
 	cout << "Size of one node is "<<sizeof(root)<< endl;
 }
 
-void set_root(int content){	
-	root = new node (nullptr,nullptr,content);
-}
-
-
+/*
 int compar(const void *a, const void * b){
 	int c = (int)(((node*)a)->content);
 	int d = (int)(((node*)b)->content);
@@ -146,7 +145,7 @@ int compar(const void *a, const void * b){
 void quiksort(node* root){
 	qsort((void*)root,count(root),sizeof(root),compar);
 }
-
+*/
 
 void insert_multi(initializer_list<int> args){
 	initializer_list<int>::iterator it;
@@ -157,6 +156,6 @@ void insert_multi(initializer_list<int> args){
 	}
 	return;
 }
+};
+}
 
-}
-}
