@@ -19,4 +19,7 @@ c)* vermeidet es variablen in den globalen namespace zu setzen
 	* man muss nun zum adressieren der Variablen ausserhalb des namespaces einen prefix verwenden.
 	* ermoeglicht es teile der standard-lib zu ueberlagern
 	* es gibt keine access specifier wie private oder public
-	
+2-3: x
+2-4: x
+2-5: x
+2-6: TO-DO	
