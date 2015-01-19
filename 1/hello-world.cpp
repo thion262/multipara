@@ -1,19 +1,12 @@
 #include <iostream>
-#include <stdio.h>
-#include <string.h>
 
-int main(int argc, char** argv){
-
-  char custom[] = "";
-  std::cout << "Hello World!" << std::endl;
-  if (argc==2){
-    strcpy (custom,argv[1]);
-  }else {
-  scanf("%s",custom);
+int main(int argc, char* argv[]){
+  std::string name;
+//  std::cin >> name;
+  if(argc > 1){
+    name = argv[1];
   }
 
-  printf ("%s\n", custom);
+  std::cout << "Hello "+ name + "!" << std::endl;
   return 0;
 }
-
-

@@ -1,31 +1,45 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
+#include <cstdlib>
+#include <string>
+#include <sstream>
 
-int main(int argc, char** argv){
+using namespace std;
 
 
-
+int main(){
   int n;
   int m;
+  std::string input= "";
   int ackermann(int a,int b);
-  std::cout << "Ackermann schreiben Sie!" << std::endl;
-  if (argc==3){
-    m = atoi(argv[1]),n = atoi(argv[2]);
-    printf("m=%d,n=%d\n", m, n);
-  }else {
-    fputs("Bitte 2 Argumente mit Angeben!", stderr);
-  return 0;
-  }
 
-  ackermann(n,m);
+while(true){
+  std::cout << "Ackermann schreiben Sie den ersten Parameter!" << std::endl;
+  std::getline(std::cin,input);
+  std::stringstream myStream(input);
+   if (myStream >> n)
+     break;
+   std::cerr << "Invalid number, please try again" << std::endl;
+}
+while(true){
+  std::cout << "Ackermann schreiben Sie den zweiten Parameter!" << std::endl;
+  std::getline(std::cin,input);
+  std::stringstream myStream(input); 
+  if (myStream >> n)
+     break;
+   std::cerr << "Invalid number, please try again" << std::endl;
+}
+
+  int a = ackermann(n,m);   
+  std::cout << a << std::endl;
   return 0;
 }
 
 
-  int ackermann (int m, int n){
+int ackermann (int m, int n){
 
-	printf("ackermann (m=%d,n=%d\n)", m,n);
+//	printf("ackermann (m=%d,n=%d\n)", m,n);
 	if(m == 0){
 	  return ++n;
 	} 
@@ -35,6 +49,6 @@ int main(int argc, char** argv){
 	else if (m > 0 , n > 0){
  	  return ackermann(--m,ackermann(m,--n));
 	}
-  }   
+}   
 
 

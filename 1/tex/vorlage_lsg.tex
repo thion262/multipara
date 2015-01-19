@@ -1,0 +1,104 @@
+% ===============================================
+% Sogenannte Praeambel: Seiteneinstellungen etc.
+% ===============================================
+
+\documentclass[german,10pt,oneside, fleqn, a4paper]{article}
+
+%%% Eingebundene Pakete: werden hier nicht alle gebraucht, schaden aber auch nicht.
+\usepackage{graphicx}
+\usepackage[german]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,amscd,amsbsy,amsxtra}
+\usepackage{epsfig,color}
+\usepackage{subfigure}
+\usepackage{fancyheadings}
+\usepackage{psfrag}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc} 
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+
+%%% Neudefinition von Kommandos, um sich Tipp-Arbeit zu ersparen 
+\newcommand {\Q}	{\mathbb{Q}}
+\newcommand {\R}	{\mathbb{R}}
+\newcommand {\N}	{\mathbb{N}}
+\newcommand{\Ra}	{\Rightarrow}
+\newcommand{\La}	{\Leftarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+
+%%% Veraenderung des Seitenlayouts
+\setlength{\oddsidemargin}{-1cm}
+%\setlength{\evensidemargin}{0cm}
+\setlength{\textwidth}{18cm}
+\setlength{\textheight}{26cm}
+\setlength{\parindent}{0pt}
+\setlength{\topmargin}{-2cm}
+\pagestyle{empty}
+
+\sloppy
+
+% ==============================================
+% Start des eigentlichen Dokumentes
+% ==============================================
+\begin{document}
+
+
+Till Fischer\\
+
+    
+\vspace{1cm}
+
+\begin{center}
+{\bf \Large Labor Softwareentwurf mit Multiparadigmen-Programmiersprachen} \\[2ex]
+\end{center}
+\begin{center}
+{\bf \Large Versuch 1} \\[1ex]
+\end{center}
+\vspace{2cm}
+
+{\bf Versuch 1-3} \\[2ex]
+\begin{enumerate}[a)]
+	\item 
+	\begin{itemize}
+		\item Prozedurale Programmierung: \\Aneinanderhaengen von Anweisungen, die dann Prozeduren ergeben.
+		\item Objektorientierte Programmierung: \\Gruppierung von Funktionen, Daten etc. in Objekte und zugehoerige Funktionen.
+		\item Generische Programmierung: \\Typen allgemein spezifizieren und erst bei Ausfuehrung festlegen, fuehrt zu mehr Wiederverwendbarkeit von Code.
+		\item Funktionale Programmierung: \\Anweisungen als mathematische Funkionen angeben.
+	\end{itemize}
+	\item
+		Ein \textit{struct} ist ein zusammengesetzter Datentyp,welcher aus mehreren primitiven Datentypen besteht.\\
+		\textit{const} macht die Variable / Pointer zu seiner linken unveraenderbar.
+	\item Der Praeprozessor in C/C++ ist ein Textersetzungsprogramm, um Makros/Direktiven in C/C++ Code umzuwandeln. Makros bergen das Problem, dass sie nicht durch die Syntax- Semantikanalyse des Programmcodes erfasst werden und die Fehlersuche schwieriger wird.
+	\item Eine Referenz (\&) gibt die Adresse einer Variable zurueck. Ein Pointer (*) dereferenziert eine Variable und gibt den Inhalt der Referenz zurueck.
+	\item Preprocessing(Include Dateien zusammensuchen), Compilation(Kompilieren was benoetigt wird), Linking(alles zusammenfuegen).
+	
+\end{enumerate}
+
+
+
+{\bf Versuch 1-4} \\[2ex]
+\begin{enumerate}[b)]
+	\item 
+		\begin{itemize}
+			\item {\bf{g++:}} Aufruf des Compilers
+			\item {\bf{-std=c++11:}} Auswaehlen des C Standards
+			\item {\bf{-Wall:}} Alle Warnings
+			\item {\bf{-Wextra:}} Zusaetzliche Warnings, die nicht in Wall enthalten sind.
+			\item {\bf{-o hello.out:}} Benennung der Output-Datei
+			\item {\bf{hellp-world.cc:}} Angabe, was kompiliert werden soll.
+		\end{itemize}
+\end{enumerate}
+
+{\bf Versuch 1-7} \\[2ex]
+Man muss math.h inkludieren.
+
+
+{\bf Versuch 1-8} \\[2ex]
+\begin{itemize}
+	\item Probleme: Bei c), Angaben der Arraylaenge in der Funktionsdefinition, kann man laengere Arrays uebergeben.
+	 \item Probleme: Arrays koennen in C nur durch Call-by-Reference uebergeben werden. sizeof gibt daher nur die laenge des Pointers in byte aus.
+	 Daher kann man wie bei d) die Laenge des Arrays fest definieren, oder die Arraylaenge mit angeben.
+
+\end{itemize}
+
+\end{document}

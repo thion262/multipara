@@ -1,29 +1,38 @@
 #include <cstdint>
 #include <initializer_list>
+#include <stddef.h>
 
+#pragma once
 namespace lmp{
 
-class Node;
+class Node{
+  int content;
+  Node* next;
+  Node* prev;
+  
 
-void Node(int content){};
+  public:
+    Node() {};
+    Node(int input){content=input;};
+    void setContent(int input);
+    void setNext(Node* iNext);
+    void setPrev(Node* iPrev);
+    int getContent();
+    Node* Next();
+    Node* Prev();
 
-extern struct node* root;
-extern bool push_back(node* elem, int & content);
 
-extern bool insert_after(node* elem, int & content);
+};
 
-extern bool insert_after(node* elem, float & content);
+class NodeList {
+  
+  Node* head;
+  Node* tail;
+  public:
+    NodeList() {head=NULL; tail=NULL;};
+    // Print this crap
 
-extern bool remove(node* elem);
-
-extern std::size_t count (node* elem);
-
-extern void print();
-
-extern void set_root(int content);
-
-void quiksort(node* root);
-
-void insert_multi(std::initializer_list<int> args);
-
+    void Print();
+    void PushBack(int data);
+};
 }

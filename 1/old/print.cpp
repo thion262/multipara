@@ -1,9 +1,17 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-
-using namespace std;
+#include <cstdlib>
+/*
+int changep(int a, int b){
+	int c;
+  c = a;
+	a = b;
+	b = c;
+	
+	return 0;
+}
+*/
 
 int changea(int *a, int *b){
   int c = *a;

@@ -1,6 +1,7 @@
 #include <cstdint>
 #include <iostream>
 #include <cmath>
+#include <math.h>
 
 using namespace std;
 
@@ -25,6 +26,14 @@ bool push_back(node* elem, int & content){
 	node* blubb = new node (elem,nullptr,content);
 	elem->next = blubb;
 	return true;
+}
+
+// new node for floats
+bool push_back(node* elem, float & content){
+  elem = last_element(elem);
+  node* blubb = new node (elem,nullptr,std::lround(content));
+  elem->next=blubb;
+  return true;
 }
 
 
@@ -105,15 +114,16 @@ node* first_element(node* elem){
 
 
 void print(){
+  cout << "Printing... \n";
 	node* elem =root;
 	if(elem==nullptr){
 		return;
 	}
 	if (elem->prev==nullptr && elem->next==nullptr){
-		cout<<"OnlyRootnode, content: "<<elem->content<<endl;
+		cout<<"OnlyRootnode, content: "<< elem->content << endl;
 	}
 	while(elem!= nullptr){
-		cout<<"current : "<<elem<<" prev: "<<elem->prev<<" next: "<< elem->next <<" content: "<< elem->content<<endl;
+		cout<<"current : "<< elem<<" prev: "<< elem->prev <<" next: "<< elem->next <<" content: "<< elem->content <<endl;
 		elem = elem->next;
 	}
 
@@ -124,25 +134,34 @@ void set_root(int content){
 	root = new node (nullptr,nullptr,content);
 }
 
-
-int compar(const void *a, const void * b){
+/*
+int compar(const void *a, const void *b){
 	int c = (int)(((node*)a)->content);
 	int d = (int)(((node*)b)->content);
-	if (c < d ){
+	if (*(int*)a < *(int*)b ){
 		cout<< c <<"<"<< d <<endl;
   	return -1;
 	}
-	if ( c == d ){
+	if (*(int*)a == *(int*)b ){
 		cout<< c <<"="<< d <<endl;
 		return  0;
 	}
-	if (c > d ){
+	if (*(int*)a > *(int*)b ){
 		cout<< c << ">"<< d <<endl;
   	return  1;
 	}
 }
+*/
+
+int compar (const void * a->content, const void * b->content)
+{
+  cout << "a= " <<*a->content << ", b=  " << *b->content << endl;
+  return ( *a->content - *b->content );
+}
+
 void quiksort(node* root){
-	qsort((void*)root,count(root),sizeof(root),compar);
+
+	std::qsort((void*)root,12,sizeof(root),compar);
 }
 
 

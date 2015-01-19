@@ -27,12 +27,6 @@ int berechnung(int a, char* b){
 
   if(strcmp(b,"sin")){
     printf("Ergebnis: %f\n", sin(a));
-  } 
-  else if(strcmp(b,"sqrt")){
-    printf("Ergebnis: %f\n", sqrt(a));
-  } 
-  else if(strcmp(b,"tanh")){
-    printf("Ergebnis: %f\n", tanh(a));
   }
   return 0;
 }

@@ -1,0 +1,122 @@
+% ===============================================
+% Sogenannte Praeambel: Seiteneinstellungen etc.
+% ===============================================
+
+\documentclass[german,10pt,oneside, fleqn, a4paper]{article}
+
+%%% Eingebundene Pakete: werden hier nicht alle gebraucht, schaden aber auch nicht.
+\usepackage{graphicx}
+\usepackage[german]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,amscd,amsbsy,amsxtra}
+\usepackage{epsfig,color}
+\usepackage{subfigure}
+\usepackage{fancyheadings}
+\usepackage{psfrag}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage[T1]{fontenc} 
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+
+%%% Neudefinition von Kommandos, um sich Tipp-Arbeit zu ersparen 
+\newcommand {\Q}	{\mathbb{Q}}
+\newcommand {\R}	{\mathbb{R}}
+\newcommand {\N}	{\mathbb{N}}
+\newcommand{\Ra}	{\Rightarrow}
+\newcommand{\La}	{\Leftarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+
+%%% Veraenderung des Seitenlayouts
+\setlength{\oddsidemargin}{-1cm}
+%\setlength{\evensidemargin}{0cm}
+\setlength{\textwidth}{18cm}
+\setlength{\textheight}{26cm}
+\setlength{\parindent}{0pt}
+\setlength{\topmargin}{-2cm}
+\pagestyle{empty}
+
+\sloppy
+
+% ==============================================
+% Start des eigentlichen Dokumentes
+% ==============================================
+\begin{document}
+
+
+Till Fischer\\
+
+    
+\vspace{1cm}
+
+\begin{center}
+{\bf \Large Labor Softwareentwurf mit Multiparadigmen-Programmiersprachen} \\[2ex]
+\end{center}
+\begin{center}
+{\bf \Large Versuch 3} \\[1ex]
+\end{center}
+\vspace{2cm}
+
+{\bf Versuch 3-1} \\[2ex]
+\begin{enumerate}[a)]
+	\item Eine virtuelle Methode ist eine Methode, bei der erst zur Laufzeit bekannt wird welche Version benoetigt wird (Overriding!).
+	\item Operationen und Funktionen die Teile einer class deklariert sind. Hierbei wird die Sichtbarkeit(scope) auf alle member einer class ausgeweitet. static member functions gehoeren nicht zu einem bestimmten object, und daher koennen sie auch nicht auf objektspezifische Variablen zugreifen.
+	\item Der Destruktor bei {C/C++} ist \textit{delete}. Mittlerweile gibt es auch \textit {unique\_ptr} , welche eine limitierte garbage-collection anbietet. Das Konstruktor / Destruktor-Pattern ist in Java nicht sinnvoll, da Java (mit Ausnahmen) die Speicherung und Loeschung von Programmdaten mit einem Garbage-Collector realisiert.
+	\item 
+		\begin{itemize}
+				\item direct derivation: derive from class, can see protected from base-class, access modifier to set priv \/ prot \/ public access rights for base class methods, can only restrict, not increase access rights of base class functions and variables.
+				\item friend: declare method with that in public segment of class > able to access private variables \& functions while not being a member method.
+		\end{itemize}
+
+	\item Describing the proper declaring of variables or objects with const depending on their usage and safety.
+	\item 
+	Ausnahmen sind  " . (dot)  ::  ?:  sizeof ".
+	? wurde aus logischen gruenden nicht ueberladen.
+	Auf sizeof  verlassen sich zu viele Funktionen.
+	. / :: keine benefits, sondern nur verwirrung.
+	
+\end{enumerate}
+
+
+
+{\bf Versuch 3-2} \\[2ex]
+\begin{enumerate}[b)]
+	\item 
+		\begin{itemize}
+			\item {\bf{g++:}} Aufruf des Compilers
+			\item {\bf{-std=c++11:}} Auswaehlen des C Standards
+			\item {\bf{-Wall:}} Alle Warnings
+			\item {\bf{-Wextra:}} Zusaetzliche Warnings, die nicht in Wall enthalten sind.
+			\item {\bf{-o hello.out:}} Benennung der Output-Datei
+			\item {\bf{hellp-world.cc:}} Angabe, was kompiliert werden soll.
+		\end{itemize}
+\end{enumerate}
+
+{\bf Versuch 1-7} \\[2ex]
+Man muss math.h inkludieren.
+
+
+{\bf Versuch 3-3} \\[2ex]
+\begin{enumerate}[a)]
+	\item Probleme: Bei c), Angaben der Arraylaenge in der Funktionsdefinition, kann man laengere Arrays uebergeben.
+	 \item Probleme: Arrays koennen in C nur durch Call-by-Reference uebergeben werden. sizeof gibt daher nur die laenge des Pointers in byte aus.
+	 Daher kann man wie bei d) die Laenge des Arrays fest definieren, oder die Arraylaenge mit angeben.
+\end{enumerate}
+
+
+{\bf Versuch 3-4} \\[2ex]
+\begin{enumerate}[a)]
+	\item Probleme: Bei c), Angaben der Arraylaenge in der Funktionsdefinition, kann man laengere Arrays uebergeben.
+	 \item Probleme: Arrays koennen in C nur durch Call-by-Reference uebergeben werden. sizeof gibt daher nur die laenge des Pointers in byte aus.
+	 Daher kann man wie bei d) die Laenge des Arrays fest definieren, oder die Arraylaenge mit angeben.
+
+\end{enumerate}
+
+{\bf Versuch 3-5} \\[2ex]
+\begin{enumerate}[a)]
+	\item Probleme: Bei c), Angaben der Arraylaenge in der Funktionsdefinition, kann man laengere Arrays uebergeben.
+	 \item Probleme: Arrays koennen in C nur durch Call-by-Reference uebergeben werden. sizeof gibt daher nur die laenge des Pointers in byte aus.
+	 Daher kann man wie bei d) die Laenge des Arrays fest definieren, oder die Arraylaenge mit angeben.
+
+\end{enumerate}
+
+\end{document}

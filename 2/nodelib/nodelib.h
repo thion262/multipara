@@ -21,4 +21,6 @@ void quiksort(node* root);
 
 void insert_multi(std::initializer_list<int> args);
 
+void first_element(node* root);
+
 }

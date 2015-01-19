@@ -1,20 +1,16 @@
 #include "nodelib.h"
+#include <string.h>
 
 using namespace lmp;
 
-int main(int argc, char** argv){
-	int root=1;
-	Node node1(root);
-	int x = 2;
-	push_back(root,x);
-	print();
-	float y = 13.54f ;
-	insert_after(root,y);
-	print();
-	print();
-	insert_multi({4,5,6,7});
-	print();
-	quiksort(root);
-	print();
-}
+int main(int argc, char **argv){
+  NodeList x; // = new NodeList();
+  x.Print();
+  x.PushBack(4);
+  x.PushBack(3);
+  x.PushBack(2);
+  x.PushBack(1);
+  x.Print();
+  return 0;
+};
 

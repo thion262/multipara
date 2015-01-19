@@ -1,0 +1,1106 @@
+g++ -c -w -g -std=c++11 nodes.cpp -o nodes.o
+nodes.cpp: In member function ‘void lmp::NodeList::Print()’:
+nodes.cpp:30:15: error: no match for ‘operator!=’ (operand types are ‘lmp::Node’ and ‘int’)
+       if(head != NULL){
+               ^
+nodes.cpp:30:15: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if(head != NULL){
+                  ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:30:18: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if(head != NULL){
+                  ^
+nodes.cpp:34:22: error: cannot convert ‘lmp::Node’ to ‘lmp::Node*’ in initialization
+         Node* elem = head;
+                      ^
+nodes.cpp: In member function ‘void lmp::NodeList::PushBack(int)’:
+nodes.cpp:44:16: error: no match for ‘operator!=’ (operand types are ‘lmp::Node’ and ‘int’)
+       if (head != NULL && tail != NULL){
+                ^
+nodes.cpp:44:16: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head != NULL && tail != NULL){
+                   ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:19: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if (head != NULL && tail != NULL){
+                   ^
+nodes.cpp:44:32: error: no match for ‘operator!=’ (operand types are ‘lmp::Node’ and ‘int’)
+       if (head != NULL && tail != NULL){
+                                ^
+nodes.cpp:44:32: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head != NULL && tail != NULL){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+In file included from nodes.cpp:5:0:
+nodes.cpp:44:35: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if (head != NULL && tail != NULL){
+                                   ^
+nodes.cpp:45:13: error: invalid user-defined conversion from ‘lmp::Node*’ to ‘lmp::Node&&’ [-fpermissive]
+         head= new Node(data);
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: note: candidate is: lmp::Node::Node(int) <near match>
+     Node(int input){};
+     ^
+nodelib.h:14:5: note:   no known conversion for argument 1 from ‘lmp::Node*’ to ‘int’
+nodes.cpp:45:13: error: invalid conversion from ‘lmp::Node*’ to ‘int’ [-fpermissive]
+         head= new Node(data);
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: error:   initializing argument 1 of ‘lmp::Node::Node(int)’ [-fpermissive]
+     Node(int input){};
+     ^
+nodes.cpp:45:13: error: conversion to non-const reference type ‘class lmp::Node&&’ from rvalue of type ‘lmp::Node’ [-fpermissive]
+         head= new Node(data);
+             ^
+nodes.cpp:48:16: error: no match for ‘operator==’ (operand types are ‘lmp::Node’ and ‘lmp::Node’)
+       if (head == tail && head != nullptr && tail != nullptr){
+                ^
+nodes.cpp:48:16: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:216:5: note: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:214:5: note: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:214:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:291:5: note: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:291:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:341:5: note: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:341:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1031:5: note: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1031:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1037:5: note: template<class _Iterator> bool std::operator==(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1037:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:128:5: note: template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:128:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:133:5: note: template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:133:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2486:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2486:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2493:5: note: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::basic_string<_CharT>&, const std::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2493:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2507:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2507:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2519:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2519:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:204:5: note: template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:204:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:19: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                   ^
+nodes.cpp:48:32: error: no match for ‘operator!=’ (operand types are ‘lmp::Node’ and ‘std::nullptr_t’)
+       if (head == tail && head != nullptr && tail != nullptr){
+                                ^
+nodes.cpp:48:32: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:35: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                   ^
+nodes.cpp:48:51: error: no match for ‘operator!=’ (operand types are ‘lmp::Node’ and ‘std::nullptr_t’)
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                   ^
+nodes.cpp:48:51: note: candidates are:
+In file included from /usr/include/c++/4.8/iosfwd:40:0,
+                 from /usr/include/c++/4.8/ios:38,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/postypes.h:221:5: note: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/include/c++/4.8/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::fpos<_StateT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:227:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:303:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:353:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1043:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note: template<class _Iterator> bool std::operator!=(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1049:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::move_iterator<_Iterator>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:138:5: note: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:138:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/string:41:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/allocator.h:143:5: note: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/include/c++/4.8/bits/allocator.h:143:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::allocator<_CharT>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2532:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2544:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   mismatched types ‘const _CharT*’ and ‘lmp::Node’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2556:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+In file included from /usr/include/c++/4.8/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/4.8/bits/basic_ios.h:37,
+                 from /usr/include/c++/4.8/ios:44,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from nodes.cpp:2:
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^
+/usr/include/c++/4.8/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+nodes.cpp:48:54: note:   ‘lmp::Node’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+       if (head == tail && head != nullptr && tail != nullptr){
+                                                      ^
+nodes.cpp:49:13: error: invalid user-defined conversion from ‘lmp::Node*’ to ‘lmp::Node&&’ [-fpermissive]
+         tail= new Node(data);
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: note: candidate is: lmp::Node::Node(int) <near match>
+     Node(int input){};
+     ^
+nodelib.h:14:5: note:   no known conversion for argument 1 from ‘lmp::Node*’ to ‘int’
+nodes.cpp:49:13: error: invalid conversion from ‘lmp::Node*’ to ‘int’ [-fpermissive]
+         tail= new Node(data);
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: error:   initializing argument 1 of ‘lmp::Node::Node(int)’ [-fpermissive]
+     Node(int input){};
+     ^
+nodes.cpp:49:13: error: conversion to non-const reference type ‘class lmp::Node&&’ from rvalue of type ‘lmp::Node’ [-fpermissive]
+         tail= new Node(data);
+             ^
+nodes.cpp:53:13: error: base operand of ‘->’ has non-pointer type ‘lmp::Node’
+         tail->setNext(elem); //set node after tail on new node, as we are adding this on the back
+             ^
+nodes.cpp:54:27: error: no matching function for call to ‘lmp::Node::setPrev(lmp::Node&)’
+         elem->setPrev(tail); // set new node prev to old tail
+                           ^
+nodes.cpp:54:27: note: candidate is:
+nodes.cpp:14:10: note: void lmp::Node::setPrev(lmp::Node*)
+     void Node::setPrev(Node* iPrev){next=iPrev;};
+          ^
+nodes.cpp:14:10: note:   no known conversion for argument 1 from ‘lmp::Node’ to ‘lmp::Node*’
+nodes.cpp:55:13: error: invalid user-defined conversion from ‘lmp::Node*’ to ‘lmp::Node&&’ [-fpermissive]
+         tail=elem; // set new node as new tail
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: note: candidate is: lmp::Node::Node(int) <near match>
+     Node(int input){};
+     ^
+nodelib.h:14:5: note:   no known conversion for argument 1 from ‘lmp::Node*’ to ‘int’
+nodes.cpp:55:13: error: invalid conversion from ‘lmp::Node*’ to ‘int’ [-fpermissive]
+         tail=elem; // set new node as new tail
+             ^
+In file included from nodes.cpp:4:0:
+nodelib.h:14:5: error:   initializing argument 1 of ‘lmp::Node::Node(int)’ [-fpermissive]
+     Node(int input){};
+     ^
+nodes.cpp:55:13: error: conversion to non-const reference type ‘class lmp::Node&&’ from rvalue of type ‘lmp::Node’ [-fpermissive]
+         tail=elem; // set new node as new tail
+             ^
+make: *** [nodes.o] Error 1
